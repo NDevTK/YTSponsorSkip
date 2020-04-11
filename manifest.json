@@ -1,0 +1,22 @@
+{
+  "name": "YTSponsorSkip",
+  "version": "1.0",
+  "description": "Skip youtube video sponsors",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "ContentScript.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts":["background.js"]
+  },
+  "manifest_version": 2
+}
